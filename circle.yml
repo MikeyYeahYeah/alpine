@@ -9,4 +9,4 @@ dependencies:
 
 test:
   override:
-    - docker run alpine:latest cat /proc/version
+    - docker run alpine:latest apk update
