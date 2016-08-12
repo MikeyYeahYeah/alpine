@@ -9,4 +9,4 @@ dependencies:
 
 test:
   override:
-    - docker run -d -p 9200:9200 alpine:latest echo "Hello World!"
+    - docker run alpine:latest cat /proc/version
