@@ -1,0 +1,12 @@
+machine:
+  services:
+    - docker
+
+dependencies:
+  override:
+    - docker info
+    - docker pull alpine:latest
+
+test:
+  override:
+    docker run -d -p 9200:9200 alpine:latest echo "Hello World!"
