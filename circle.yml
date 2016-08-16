@@ -2,6 +2,10 @@ machine:
   services:
     - docker
 
+general:
+  pre:
+    - echo "set -v" >> ~/.bash_profile
+
 dependencies:
   override:
     - docker info
