@@ -1,6 +1,8 @@
 machine:
   services:
     - docker
+
+checkout:
   pre:
     - echo "set -v" >> ~/.bash_profile
 
