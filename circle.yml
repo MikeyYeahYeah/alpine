@@ -10,3 +10,4 @@ dependencies:
 test:
   override:
     - docker run alpine:latest apk update
+ 
