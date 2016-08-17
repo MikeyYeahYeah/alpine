@@ -4,7 +4,7 @@ machine:
 
 checkout:
   pre:
-    - echo "set -v" >> ~/.bash_profile
+    - history
 
 dependencies:
   override:
